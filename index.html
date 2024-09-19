@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Food Tracker App</title>
+</head>
+<body>
+    <h1>Food Tracker App</h1>
+    <div class="input-section">
+        <label for="food-input">Food:</label>
+        <input type="text" id="food-input">
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input">
+        <button id="add-btn">Add</button>
+    </div>
+    <div class="summary-section">
+        <h2>Food Summary</h2>
+        <canvas id="food-chart" width="400" height="400"></canvas> <!-- Fixed ID here -->
+        <div id="food-summary">
+            <p>Calories: <span id="total-calories">0</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
